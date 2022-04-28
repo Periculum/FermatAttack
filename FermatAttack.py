@@ -8,7 +8,7 @@ MODUL = 18487289 * 18543067
 # recursive Method that finds the distance between the mid and primes
 def attack(guess, tries):
     b = pow(guess + tries, 2) - MODUL
-    if not math.sqrt(b).is_integer():
+    if b < 0 or not math.sqrt(b).is_integer():
         tries += 1
         return attack(guess, tries)
     else:
