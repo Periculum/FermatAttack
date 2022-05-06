@@ -21,9 +21,9 @@ def main():
   prime2 = a + b
   if a != 0:
     print(
-        f"Es braucht {tries} Versuche, um die Faktoren {prime1} und {prime2} zu finden.")
+        f"It took {tries} Tries to find the Primes {prime1} and {prime2}.")
   else:
-    print(f"Kein Treffer in {tries} Versuchen.")
+    print(f"Nothing found in {tries} Tries.")
 
 
 if __name__ == "__main__":
